@@ -1,6 +1,6 @@
 using Murmur.Domain.Models;
 
-namespace Murmur.Infrastructure.Models;
+namespace Murmur.Application.Models;
 
 public class Message
 {

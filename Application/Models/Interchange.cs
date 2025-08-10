@@ -1,6 +1,6 @@
 using Murmur.Domain.Models;
 
-namespace Murmur.Infrastructure.Models;
+namespace Murmur.Application.Models;
 
 public class Interchange : IInterchange
 {
@@ -13,3 +13,4 @@ public class Interchange : IInterchange
     Title = title;
   }
 }
+

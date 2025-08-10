@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Murmur.Infrastructure.Models;
+using Murmur.Application.Models;
 
 namespace Murmur.Infrastructure.Data;
 
