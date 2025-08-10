@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Murmur.Application.Models;
+using Murmur.Domain.Models;
 
 namespace Murmur.Infrastructure.Data;
 
@@ -18,6 +18,12 @@ public class MurmurDBContext : DbContext
 
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   {
+    modelBuilder
+      .Entity<Interchange>()
+      .HasMany<Message>(i => i.Messages)
+      .WithOne()
+      .HasForeignKey(i => i.Id);
+
     base.OnModelCreating(modelBuilder);
   }
 }
