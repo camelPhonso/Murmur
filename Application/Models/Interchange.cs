@@ -1,16 +1,15 @@
-using Murmur.Domain.Models;
-
 namespace Murmur.Application.Models;
 
-public class Interchange : IInterchange
+public class Interchange
 {
-  public Guid Id { set; get; } = Guid.NewGuid();
-  public string Title { set; get; }
-  public List<IMessage> Messages { set; get; } = new();
+  public Guid Id { get; set; }
+  public string Title { get; set; }
+  public List<Message> Messages { set; get; }
 
-  public Interchange(string title)
+  public Interchange(Guid id, string title, List<Message> messages)
   {
+    Id = id;
     Title = title;
+    Messages = messages;
   }
 }
-

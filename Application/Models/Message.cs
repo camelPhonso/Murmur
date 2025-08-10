@@ -1,14 +1,13 @@
-using Murmur.Domain.Models;
-
 namespace Murmur.Application.Models;
 
 public class Message
 {
-  public Guid Id { get; } = Guid.NewGuid();
-  public string Content { get; }
+  public Guid Id { get; set; }
+  public string Content { get; set; }
 
-  public Message(string content)
+  public Message(Guid id, string content)
   {
+    Id = id;
     Content = content;
   }
 }
