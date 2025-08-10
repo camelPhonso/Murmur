@@ -3,8 +3,8 @@
     {
       "name": "format",
       "group": "pre-commit",
-      "command": "dotnet csharpier",
-      "args": ["format", "${staged}"],
+      "command": "dotnet",
+      "args": ["csharpier", "format", "${staged}"],
       "include": ["**/*.cs"]
     }
   ]
