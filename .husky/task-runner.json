@@ -1,0 +1,11 @@
+{
+  "tasks": [
+    {
+      "name": "format",
+      "group": "pre-commit",
+      "command": "dotnet csharpier",
+      "args": ["format", "${staged}"],
+      "include": ["**/*.cs"]
+    }
+  ]
+}
