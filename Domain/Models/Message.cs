@@ -1,4 +1,4 @@
-namespace Murmur.Application.Models;
+namespace Murmur.Domain.Models;
 
 public class Message
 {
