@@ -6,10 +6,10 @@ public class Interchange
   public string Title { get; set; }
   public List<Message> Messages { set; get; }
 
-  public Interchange(Guid id, string title, List<Message> messages)
+  public Interchange(Guid id, string title)
   {
     Id = id;
     Title = title;
-    Messages = messages;
+    Messages = new();
   }
 }

@@ -6,6 +6,7 @@ namespace Murmur.Infrastructure.Data;
 public class MurmurDBContext : DbContext
 {
   public DbSet<Interchange> Interchanges { get; set; }
+  public DbSet<Message> Messages { get; set; }
 
   public MurmurDBContext(DbContextOptions options)
     : base(options) { }
